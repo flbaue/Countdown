@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  ~ Copyright 2015 Florian Bauer, florian.bauer@posteo.de
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~    You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+  -->
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+<Pane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+      minWidth="-Infinity" prefHeight="128.0" prefWidth="197.0" xmlns="http://javafx.com/javafx/8"
+      fx:controller="flbaue.countdown.view.CountdownController">
+    <children>
+        <Label fx:id="time" alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="45.0" prefWidth="169.0"
+               text="00:00:00">
+            <font>
+                <Font name="American Typewriter" size="37.0"/>
+            </font>
+        </Label>
+        <Button fx:id="plus1" layoutX="14.0" layoutY="59.0" mnemonicParsing="false" onAction="#handleplus1" text="+1">
+            <font>
+                <Font name="American Typewriter" size="13.0"/>
+            </font>
+        </Button>
+        <Button fx:id="plus10" layoutX="47.0" layoutY="59.0" mnemonicParsing="false" onAction="#handleplus10"
+                text="+10">
+            <font>
+                <Font name="American Typewriter" size="13.0"/>
+            </font>
+        </Button>
+        <Button fx:id="plus60" layoutX="88.0" layoutY="59.0" mnemonicParsing="false" onAction="#handleplus60"
+                text="+60">
+            <font>
+                <Font name="American Typewriter" size="13.0"/>
+            </font>
+        </Button>
+        <Button fx:id="start" layoutX="14.0" layoutY="86.0" mnemonicParsing="false" onAction="#handleStart"
+                prefHeight="26.0" prefWidth="57.0" text="Start">
+            <font>
+                <Font name="American Typewriter" size="13.0"/>
+            </font>
+        </Button>
+        <Button fx:id="stop" layoutX="71.0" layoutY="86.0" mnemonicParsing="false" onAction="#handleStop"
+                prefHeight="26.0" prefWidth="58.0" text="Stop">
+            <font>
+                <Font name="American Typewriter" size="13.0"/>
+            </font>
+        </Button>
+        <Button layoutX="129.0" layoutY="59.0" mnemonicParsing="false" onAction="#handleSub1" text="-1">
+            <font>
+                <Font name="American Typewriter" size="13.0"/>
+            </font>
+        </Button>
+        <Button layoutX="129.0" layoutY="85.0" mnemonicParsing="false" onAction="#handleReset" prefHeight="26.0"
+                prefWidth="60.0"
+                text="Reset">
+            <font>
+                <Font name="American Typewriter Bold" size="13.0"/>
+            </font>
+        </Button>
+        <Button layoutX="159.0" layoutY="59.0" mnemonicParsing="false" onAction="#handleSub5"
+                text="-5">
+            <font>
+                <Font name="American Typewriter" size="13.0"/>
+            </font>
+        </Button>
+    </children>
+</Pane>
